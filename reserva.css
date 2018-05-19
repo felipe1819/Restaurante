@@ -1,0 +1,70 @@
+
+
+nav a{
+	font-family:'Great Vibes';font-weight:normal;color:red;
+	font-weight: bold;
+
+}
+}
+
+body{
+     background-image: url("http://www.lagrassa.com.br/wp-content/uploads/2018/04/blog6.png"); 
+     background-repeat: no-repeat;
+     background-size: cover; 
+     color: white;
+
+}
+
+body h1{
+	font-size: 23px;
+	font-weight: bold;
+    font-family:'Great Vibes';font-weight:normal;color:#fd4d36;
+	text-transform: inherit;
+	background-color: transparent;
+	color: black;
+	letter-spacing: 3px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(247, 247, 247, 0.7);
+    padding: 22px;
+
+	}
+
+
+body p{
+	font-size: 14px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: justify;
+	color: black;
+	letter-spacing: 1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(247, 247, 247, 0.7);
+    padding: 20px; 
+    background-size: cover;
+   
+}
+
+.container a {
+	color: red;
+}
+
+strong  {
+	font-family: Verdana;
+	font-size: 12px;
+	color: white;
+	font-weight: bold;
+	background-size: cover;
+
+}	
+div.footer {
+    width:100%; 
+    position:fixed; 
+    left 0px; 
+    bottom:0px;
+
+}
+
+div.footer a{ 
+	font-family: verdana;
+	font-size: 10px;
+	text-transform: inherit;
+}
