@@ -16,7 +16,7 @@
   
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index_restaurante.php"><i>Coltello Nell'impasto</a></i>
+  <a class="navbar-brand" href="index.php"><i>Coltello Nell'impasto</a></i>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,7 +28,7 @@
         <a class="nav-link" href="index.php">História <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cardipio.php">Cardápio</a>
+        <a class="nav-link" href="cardipio.<?php  ?>">Cardápio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="bebidas.php">Bebidas</a>
