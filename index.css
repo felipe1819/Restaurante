@@ -1,4 +1,17 @@
+nav a{
+	font-family:'Great Vibes';font-weight:normal;color:red;
+	font-weight: bold;
 
+}
+
+
+body{
+     background-image: url("https://www.falandodeviagem.com.br/imagens20/Scarpetta9.jpg"); 
+     background-repeat: no-repeat;
+     background-size: cover; 
+     color: white;
+
+}
 nav p{
   font-family:'Great Vibes';font-weight:normal;color:red;
   text-transform: inherit;
@@ -8,19 +21,12 @@ nav p{
 }
 
 nav a{
-	font-family:'Great Vibes';font-weight:normal;color:red;
+	font-family:'Great Vibes';font-weight:normal;
+	color:red;
 	font-weight: bold;
 
 }
-}
 
-body{
-      background-image: url("https://http2.mlstatic.com/forno-industrial-4-pizzas-38-cm-refrataria-3-infra-155-x-50-D_NQ_NP_900902-MLB25725913453_072017-F.jpg"); 
-     background-repeat: no-repeat;
-     background-size: cover; 
-     color: white;
-
-}
 
 body h1{
 	font-size: 23px;
@@ -46,7 +52,7 @@ body p{
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(247, 247, 247, 0.7);
     padding: 20px; 
-    background-size: cover;
+    
    
 }
 
@@ -55,9 +61,10 @@ strong  {
 	font-size: 12px;
 	color: white;
 	font-weight: bold;
-	background-size: cover;
+	
 
 }	
+
 div.footer {
     width:100%; 
     position:fixed; 
@@ -71,3 +78,5 @@ div.footer a{
 	font-size: 10px;
 	text-transform: inherit;
 }
+
+
