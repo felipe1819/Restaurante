@@ -23,16 +23,16 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="restaurante/index.html">História <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="restaurante/index.php">História <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Cardápio</a>
+        <a class="nav-link" href="cardapio.php">Cardápio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Bebidas</a>
+        <a class="nav-link" href="bebidas.php">Bebidas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="reserva.html">Reserva</a>
+        <a class="nav-link" href="reserva.php">Reserva</a>
       </li>
     </ul>
   </div>
