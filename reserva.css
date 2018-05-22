@@ -5,10 +5,10 @@ nav a{
 	font-weight: bold;
 
 }
-}
+
 
 body{
-     background-image: url("http://www.lagrassa.com.br/wp-content/uploads/2018/04/blog6.png"); 
+     background-image: url("https://www.falandodeviagem.com.br/imagens20/Scarpetta9.jpg"); 
      background-repeat: no-repeat;
      background-size: cover; 
      color: white;
@@ -67,4 +67,18 @@ div.footer a{
 	font-family: verdana;
 	font-size: 10px;
 	text-transform: inherit;
+}
+
+
+legend h2{
+	font-size: 23px;
+	font-weight: bold;
+    font-family:'Great Vibes';font-weight:normal;
+    color:white;
+	text-transform: inherit;
+
+}
+
+label {
+	color: white;
 }
