@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Maio-2018 às 01:07
+-- Generation Time: 24-Maio-2018 às 00:00
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -25,21 +25,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `bebida`
+--
+
+CREATE TABLE `bebida` (
+  `idcardapio` int(11) NOT NULL,
+  `nome` varchar(45) DEFAULT NULL,
+  `litros` varchar(45) DEFAULT NULL,
+  `valor` varchar(45) DEFAULT NULL,
+  `img` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `bebida`
+--
+
+INSERT INTO `bebida` (`idcardapio`, `nome`, `litros`, `valor`, `img`) VALUES
+(4, 'Vinho Tinto', '1 litro', '30,00', 'https://www.casadabebida.com.br/img/products/vinho-periquita-tinto_1_400.jpg'),
+(5, 'vinho Branco', '2 litros', '100,00', 'https://www.casadabebida.com.br/img/products/vinho-periquita-tinto_1_400.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `cardapio`
 --
 
 CREATE TABLE `cardapio` (
   `idcardapio` int(11) NOT NULL,
-  `prato` varchar(45) DEFAULT NULL,
-  `bebida` varchar(45) DEFAULT NULL
+  `nome` varchar(45) DEFAULT NULL,
+  `porcao` varchar(45) DEFAULT NULL,
+  `valor` varchar(45) DEFAULT NULL,
+  `img` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `cardapio`
 --
 
-INSERT INTO `cardapio` (`idcardapio`, `prato`, `bebida`) VALUES
-(1, 'pizza', 'vinho branco');
+INSERT INTO `cardapio` (`idcardapio`, `nome`, `porcao`, `valor`, `img`) VALUES
+(4, 'pastel', '4 pessoas', 'R$ 50,00', 'https://i2.wp.com/hi-mundim.com.br/wp-content/uploads/2017/11/hi-mundim-pastel-concurso.jpg?fit=690%2C460'),
+(5, 'Pastel de Flango', '1 pessoa', '10 Real', 'https://i2.wp.com/hi-mundim.com.br/wp-content/uploads/2017/11/hi-mundim-pastel-concurso.jpg?fit=690%2C460');
 
 -- --------------------------------------------------------
 
@@ -62,11 +87,17 @@ CREATE TABLE `reserva` (
 --
 
 INSERT INTO `reserva` (`idreserva`, `nome`, `q_pessoas`, `horario`, `rg`, `cpf`, `telefone`) VALUES
-(1, 'fulano', '4', '12:00am', '123.456.789', '123.456.789.123', '4455-6677');
+(2, 'fulano', '4', '12:00am', '123456765', '12134567890', '33445566');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `bebida`
+--
+ALTER TABLE `bebida`
+  ADD PRIMARY KEY (`idcardapio`);
 
 --
 -- Indexes for table `cardapio`
@@ -85,16 +116,22 @@ ALTER TABLE `reserva`
 --
 
 --
+-- AUTO_INCREMENT for table `bebida`
+--
+ALTER TABLE `bebida`
+  MODIFY `idcardapio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `cardapio`
 --
 ALTER TABLE `cardapio`
-  MODIFY `idcardapio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idcardapio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `reserva`
 --
 ALTER TABLE `reserva`
-  MODIFY `idreserva` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idreserva` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
