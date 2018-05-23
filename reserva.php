@@ -23,7 +23,7 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="restaurante/index.php">História <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">História <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="cardapio.php">Cardápio</a>
@@ -144,12 +144,15 @@
 
 </div></div></div>
 
+<center>
+
 <div class="footer">
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #282828; border-color: #00000;">
 <div class="container">
-<a class="navbar-brand"> Restaurante Coltello Nell'impasto © 2018 | Rua Senador Dantas, 23, loja A - Centro - Cinelândia - Rio de Janeiro - RJ </a>
+<a class="navbar-brand"> Av. Rio Branco, 55 – B  | Centro | Rio de Janeiro </a><br><br><a>reservas@coltellonellimpasto.com.br / 55  21 2269-2296</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon"></span></center>
+
 
 
   </div>

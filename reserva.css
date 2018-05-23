@@ -1,17 +1,11 @@
 
-
-nav a{
-	font-family:'Great Vibes';font-weight:normal;color:red;
-	font-weight: bold;
-
-}
-
-
 body{
-     background-image: url("https://www.falandodeviagem.com.br/imagens20/Scarpetta9.jpg"); 
+     background-image: url("https://curitibarestaurantweek.files.wordpress.com/2011/04/villa-marcolini-1.jpg"); 
      background-repeat: no-repeat;
      background-size: cover; 
      color: white;
+     text-transform: inherit;
+
 
 }
 
@@ -74,11 +68,23 @@ legend h2{
 	font-size: 23px;
 	font-weight: bold;
     font-family:'Great Vibes';font-weight:normal;
-    color:white;
+    color: white;
+    font-weight: center;
 	text-transform: inherit;
-
+	
+    
+   
 }
 
 label {
+	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+input {
+    
+
+
 }
