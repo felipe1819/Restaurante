@@ -141,7 +141,7 @@ include_once 'crud_reserva.php';
     </div>
     
 
-    <button id="botao" type="submit" class="btn btn-outline-secondary" name="save">Reservar</button>
+    <button id="botao" type="submit" class="btn btn-danger" name="save">Reservar</button>
 </form>
 <br><br><br><br><br><br>
 </div>
@@ -155,7 +155,7 @@ include_once 'crud_reserva.php';
 <div class="footer">
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #282828; border-color: #00000;">
 <div class="container">
-<a class="navbar-brand"> Av. Rio Branco, 55 – B  | Centro | Rio de Janeiro </a><br><br><a>reservas@coltellonellimpasto.com.br / 55  21 2269-2296</a>
+<a class="navbar-brand"> Rua Senador Dantas, 23, loja A  | Centro | Rio de Janeiro </a><br><br><a>reservas@coltellonellimpasto.com.br / +55 (21) 2269-2296</a>
 
 
 
