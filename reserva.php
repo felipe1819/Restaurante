@@ -1,9 +1,15 @@
+<?php
+include_once 'crud_reserva.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"/>
   <title>Coltello Nell'impasto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <link rel="stylesheet" type="text/css" href="css/reserva.css">
+  
   
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-4KIc2mnKfAA7VjirNLk2Sqp7jxFNq1q8+FhYGxhW2l52lt4HJsfksL+hjswHfbl/" crossorigin="anonymous">
   
@@ -12,9 +18,9 @@
 <body>
   
 
- </style>
+ 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.php">Coltello Nell'impasto</a>
+  <a class="navbar-brand" href="index.php"><i>Coltello Nell'impasto</a></i>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,24 +28,24 @@
 <div class="container">
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.php">História <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cardapio.php">Cardápio</a>
+        <a class="nav-link" href="cardapio.html">Cardápio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="bebidas.php">Bebidas</a>
+        <a class="nav-link" href="bebidas.html">Bebidas</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="reserva.php">Reserva</a>
       </li>
     </ul>
   </div>
 </div>
     
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Busca">
+    <form class="form-inline my-2 my-lg-0" action="busca.php" method="post">
+      <input name="buscar" class="form-control mr-sm-2" type="text" placeholder="Busca">
       <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
       
     </form>
@@ -76,7 +82,7 @@
 
 </div>
 <div class="col-sm-4">
-<form action="" method="">
+<form action="" method="post">
   <fieldset>
     <legend><h2><i>Reserve sua mesa grátis</i></h2></legend>
     <div class="form-group row">
@@ -90,7 +96,7 @@
     </div>
     <div class="form-group">
       <label>Quantidade de pessoas?</label>
-      <select class="form-control" name="quantidade">
+      <select class="form-control" name="q_pessoas">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -105,7 +111,7 @@
     </div>
     <div class="form-group">
       <label for="exampleSelect1">Horário desejado?</label>
-      <select class="form-control" name="hora">
+      <select class="form-control" name="horario">
         <option>11:20</option>
         <option>11:00</option>
         <option>12:00</option>
@@ -124,18 +130,18 @@
      </div>
      <div class="form-group">
       <label for="exampleInputEmail1">Dia</label>
-      <input type="date" class="form-control" name="dia">
+      <input type="date" class="form-control" name="data">
       <small id="emailHelp" class="form-text text-muted"></small>
     </div>
 
 
     <div class="form-group">
       <label for="exampleInputPassword1">Telefone</label>
-      <input type="text" class="form-control" placeholder="(21) 9999-9999   ">
+      <input type="text" class="form-control" name="telefone" placeholder="(21) 9999-9999   ">
     </div>
     
 
-    <button id="botao" type="button" class="btn btn-outline-secondary">Reservar</button>
+    <button id="botao" type="submit" class="btn btn-outline-secondary" name="save">Reservar</button>
 </form>
 <br><br><br><br><br><br>
 </div>
@@ -150,12 +156,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #282828; border-color: #00000;">
 <div class="container">
 <a class="navbar-brand"> Av. Rio Branco, 55 – B  | Centro | Rio de Janeiro </a><br><br><a>reservas@coltellonellimpasto.com.br / 55  21 2269-2296</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-<span class="navbar-toggler-icon"></span></center>
+
 
 
 
   </div>
-
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
